@@ -1,7 +1,20 @@
-<h1>Movies Lists</h1>
+<div class="wrapper">
 
-<% @lists.each do |list| %>
-  <%= link_to list.name, list_path(list) %>
-<% end %>
+  <div class="banner-index">
+    <h1>Welcome to your lists!</h1>
+  </div>
 
-<%= link_to "Create new list", new_list_path %>
+  <div class="list-index-content">
+    <% @lists.each do |list| %>
+      <%= link_to list_path(list) do %>
+      <div class="list-card-index">
+        <%# <%= image_tag 'source',  %> %>
+        <div class="list-card-content">
+        <%= list.name %>
+        </div>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>
