@@ -7,10 +7,11 @@
   <div class="list-index-content">
     <% @lists.each do |list| %>
       <%= link_to list_path(list) do %>
-      <div class="list-card-index">
-        <%= image_tag 'enter_the_dragen.jpg', alt: "movie poster" %>
+        <div class="list-card-index">
+          <%= image_tag 'enter_the_dragen.jpg', class: 'image-list-cover', alt: "image cover for list" %>
+
         <div class="list-card-content">
-        <%= list.name %>
+          <p><%= list.name %></p>
         </div>
       </div>
       <% end %>

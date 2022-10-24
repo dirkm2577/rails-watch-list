@@ -1,10 +1,10 @@
-.banner-index {
+.banner-show {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)), url(asset_path('cinema.jpg'));
+      rgba(0, 0, 0, 0.5)), url(asset_path('show-cover.jpg'));
   background-size: cover;
   background-position: center;
 
@@ -13,13 +13,9 @@
   }
 }
 
-.logo-navbar {
+.show-navigate {
+  width: 100%;
   display: flex;
-  align-items: center;
-  a {
-    margin-right: 4px;
-  }
-  p {
-    margin: 0;
-  }
+  justify-content: space-between;
+  padding: 8px 200px;
 }

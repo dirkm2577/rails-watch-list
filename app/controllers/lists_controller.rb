@@ -1,5 +1,4 @@
 class ListsController < ApplicationController
-
   def index
     @lists = List.all
   end
@@ -21,10 +20,13 @@ class ListsController < ApplicationController
     end
   end
 
+  def destroy
+    @list = List.find(params[:id])
+  end
+
   private
 
   def list_params
     params.require(:list).permit(:name)
   end
-
 end

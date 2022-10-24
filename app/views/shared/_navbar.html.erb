@@ -1,8 +1,9 @@
 <div class="navbar">
   <div class="logo-navbar">
-  <%= link_to lists_path do %>
-    <%= image_tag 'popcorn.png', class: 'logo logo-round-shadow', alt: "app logo" %>
-  <% end %>
+    <%= link_to lists_path do %>
+      <%= image_tag 'popcorn.png', class: 'logo logo-round-shadow', alt: "app logo" %>
+    <% end %>
+    <p>MOVIE LIST</p>
   </div>
   <div class="navbar-links">
     <%= link_to "Add a List", new_list_path, class: 'btn btn-primary' %>
